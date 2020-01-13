@@ -2,24 +2,23 @@
 # Helper functions for Python
 # 
 # Contents:
-# 1. General
+# 1. Environment
 #   1.1 in_ipynb
 #   1.2 dev_import
 #
-# 2. General
+# 2. Dataframes
 #   2.1 head_shape
 #   2.2 remove_col_if_in
 # 
-# 3. Time functions
+# 3. Time
 #   3.1 remove_timezone
-#   3.2 col_to_epoch
-#   3.3 col_to_datetime
+#   3.2 convert_epoch_dt
 # =============================================================================
 
 import helpers
 
 # =============================================================================
-# 1. General
+# 1. Environment
 # =============================================================================
 
 def in_ipynb():
@@ -94,6 +93,9 @@ def remove_timezone(df, col):
 
 
 def convert_epoch_dt(df, col):
+    """
+    Converts a column from epoch to datetime or vice versa
+    """
     if df[str(col)].dtypes == '<M8[ns]':
         df[str(col)] = df[str(col)].astype('int64')
         print(df[str(col)].dtypes)
