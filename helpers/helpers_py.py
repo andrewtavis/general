@@ -31,7 +31,7 @@ def in_ipynb():
     """
     try:
         cfg = get_ipython().config 
-        if cfg['IPKernelApp']['parent_appname'] == 'ipython-notebook':
+        if cfg['IPKernelApp']:
             return True
         else:
             return False
