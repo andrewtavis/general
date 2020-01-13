@@ -1,5 +1,5 @@
 # =============================================================================
-# General helper functions for Python
+# Helper functions for Python
 # 
 # Contents:
 # 1. General
@@ -25,6 +25,10 @@ import helpers
 def in_ipynb():
     """
     Checks if the current environment is an iPython notebook, changing functional actions if so
+
+    Dependent for
+    -------------
+        head_shape : for display or print actions
     """
     try:
         cfg = get_ipython().config 
@@ -55,6 +59,10 @@ def dev_import(package_name):
 def head_shape(df, head_count=5):
     """
     Displays or prints the head of a df given the environment
+
+    Dependent on
+    ------------
+        in_ipynb : for environment derivation
     """
     if helpers.in_ipynb():
         from IPython.display import display
