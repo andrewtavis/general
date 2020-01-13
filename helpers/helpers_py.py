@@ -15,7 +15,7 @@
 #   3.2 convert_epoch_dt
 # =============================================================================
 
-import helpers_py
+import helpers.helpers_py
 
 # =============================================================================
 # 1. Environment
@@ -63,7 +63,7 @@ def head_shape(df, head_count=5):
     ------------
         in_ipynb : for environment derivation
     """
-    if helpers_py.in_ipynb():
+    if helpers.helpers_py.in_ipynb():
         from IPython.display import display
         display(df.head(head_count))
         display(df.shape)
