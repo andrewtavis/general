@@ -1,17 +1,18 @@
 # =============================================================================
 # Helper functions for Python
 # 
-# Contents:
-# 1. Environment
-#   in_ipynb
+# Contents
+# --------
+#   1. Environment
+#       in_ipynb
 #
-# 2. Dataframes - Display and Dimensions
-#   head_shape
-#   remove_col_if_in
+#   2. Dataframes - Display and Dimensions
+#       head_shape
+#       remove_col_if_in
 # 
-# 3. Dataframes - Time
-#   remove_timezone
-#   convert_epoch_dt
+#   3. Dataframes - Time
+#       remove_timezone
+#       convert_epoch_dt
 # =============================================================================
 
 import helpers.helpers_py
