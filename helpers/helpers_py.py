@@ -4,13 +4,12 @@
 # Contents:
 # 1. Environment
 #   1.1 in_ipynb
-#   1.2 dev_import
 #
-# 2. Dataframes
+# 2. Dataframes - Display and Dimensions
 #   2.1 head_shape
 #   2.2 remove_col_if_in
 # 
-# 3. Time
+# 3. Dataframs - Time
 #   3.1 remove_timezone
 #   3.2 convert_epoch_dt
 # =============================================================================
@@ -39,20 +38,8 @@ def in_ipynb():
         return False
 
 
-def dev_import(package_name):
-    """
-    Checks for a local package file for import, and imports the global version if not present
-    """
-    try:
-        from . import package_name
-        print('Local version of {} found - importing for development'.format(str(package_name)))
-    except:
-        import package_name
-        print('No local version of {} found - importing from the global Python environment'.format(str(package_name)))
-
-
 # =============================================================================
-# 2. Dataframes
+# 2. Dataframes - Display and Dimensions
 # =============================================================================
 
 def head_shape(df, head_count=5):
@@ -82,7 +69,7 @@ def remove_col_if_in(df, col):
 
 
 # =============================================================================
-# 3. Time
+# 3. Dataframs - Time
 # =============================================================================
 
 def remove_timezone(df, col):
