@@ -3,15 +3,15 @@
 # 
 # Contents:
 # 1. Environment
-#   1.1 in_ipynb
+#   in_ipynb
 #
 # 2. Dataframes - Display and Dimensions
-#   2.1 head_shape
-#   2.2 remove_col_if_in
+#   head_shape
+#   remove_col_if_in
 # 
-# 3. Dataframs - Time
-#   3.1 remove_timezone
-#   3.2 convert_epoch_dt
+# 3. Dataframes - Time
+#   remove_timezone
+#   convert_epoch_dt
 # =============================================================================
 
 import helpers.helpers_py
