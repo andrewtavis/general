@@ -1,0 +1,15 @@
+# Editor files
+##############
+.vscode/
+
+# OS files
+##########
+.DS_Store
+
+# Documentation files
+#####################
+env/
+
+# Display files
+###############
+*.sketch
